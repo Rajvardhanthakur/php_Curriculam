@@ -1,24 +1,32 @@
-<?php
+<html>
+    <body>
+    <?php
     #Constant
     define("NAME", "Rajvardhan");
-    echo NAME,"\n";
-    echo constant("NAME"),"\n";
+    echo NAME,"<br />";
+    echo constant("NAME"),"<br />";
 
     #Predefined constansts 
-    echo __LINE__,"\n";
-    echo __FILE__,"\n";
+    echo __LINE__,"<br />";
+    echo __FILE__,"<br />";
+
+    echo "<br />";
+    echo "<br />";
 
     # program to print 1 to 100
     for($i = 1; $i <=100; $i++){
         echo $i," ";
     }
-    echo "\n";
-    
+    echo "<br />";
+    echo "<br />";
+
     #Table of any number
     $num = 2;
     for($i = 1; $i <= 10; $i++){
-        echo $num." * ".$i." = ".$num * $i."\n";
+        echo $num." * ".$i." = ".$num * $i."<br />";
     }
+    echo "<br />";
+    echo "<br />";
 
     #Palindrome Number 
     $num1 = 707;
@@ -34,9 +42,11 @@
     }while(floor($num2));
 
     if($rev == $num1){
-        echo "Number is Palindrome, reverse of $num1 is $rev \n";
+        echo "Number is Palindrome, reverse of $num1 is $rev <br>";
     }
     else{
-        echo "Number is not Palindrome, number is $num1 reverse number is $rev \n";   
+        echo "Number is not Palindrome, number is $num1 reverse number is $rev <br>";   
     }
 ?>
+    </body>
+</html>
